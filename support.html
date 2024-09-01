@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fonts\Mariupol-Bold\Mariupol_Bold.css">
+  <link rel="stylesheet" href="fonts\Mariupol-Regular\Mariupol_Regular.css">
+  <link rel="stylesheet" href="css\support.css">
+  <link rel="stylesheet" href="css\all_style.css">
+  <script src="js\schedule.js"></script>
+  
+</head>
+<body>
+<header>
+  <div><button class="back_button" onclick="window.location.href = 'menu.html'"><img class="icon_back" src="img\back.png" alt="Назад"></button></div>
+  <div><h1>Техпідтримка</h1></div>
+</header>
+
+<div class="content">
+  <div class="social-network">
+    <div class="title">
+      <img class="logo" width="50" height="50" src="img\logo_discord.png" alt="">
+      <p class="text">it_schedule</p>
+    </div>
+    <div class="buttons">
+      <button class="my-button" onclick="window.open('https://discord.gg/34wCyxMNSw', '_blank')"><img width="26" height="26" src="img\button_pass.png"></button>
+      <button class="copy-button" onclick="copyToClipboard1()"><img width="30" height="30" src="img\button_copy.png"></button>
+    </div>
+  </div>
+
+  <div class="social-network">
+    <div class="title">
+      <img class="logo" width="50" height="50" src="img\logo_telegram.png" alt="">
+      <p class="text">@it_schedule_khai</p>
+    </div>
+    <div class="buttons">
+      <button class="my-button" onclick="window.open('https://t.me/it_schedule_khai', '_blank')"><img width="26" height="26" src="img\button_pass.png" alt=""></button>
+      <button class="copy-button" onclick="copyToClipboard2()"><img width="30" height="30" src="img\button_copy.png"></button>
+    </div>
+  </div>
+  
+  <!-- <div class="social-network">
+    <div class="title">
+      <img class="logo" width="50" height="50" src="img\logo_gmail.png" alt="">
+      <p class="text">it.schedule1@gmail.com</p>
+    </div>
+    <div class="buttons">
+      <button class="my-button" onclick="window.open('https://it.schedule1@gmail.com', '_blank')"><img width="26" height="26" src="img\button_pass.png"></button>
+      <button class="copy-button" onclick="copyToClipboard3()"><img width="30" height="30" src="img\button_copy.png"></button>
+    </div>
+  </div> -->
+</div>
+
+
+
+<div id="notification"></div>
+
+<img class="chel" src="img\background_support.png" width="350" height="350">
+
+<script src="js\suppor.js"></script>
+
+  <script>
+    function copyToClipboard1() {
+      const textToCopy = 'it_schedule';
+
+      try {
+        // Сначала пытаемся использовать новый API (для современных браузеров)
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            showNotification('Вміст скопійовано');
+          })
+          .catch(() => {
+            // Если новый API не работает, пытаемся использовать старый способ
+            fallbackCopyToClipboard(textToCopy);
+          });
+      } catch (err) {
+        // Если новый API вообще не поддерживается, используем старый способ
+        fallbackCopyToClipboard(textToCopy);
+      }
+    }
+
+    function fallbackCopyToClipboard(text) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showNotification('Вміст скопійовано');
+        } else {
+          showNotification('Не вдалось скопійувати');
+        }
+      } catch (err) {
+        showNotification('Не вдалось скопійувати');
+      }
+
+      document.body.removeChild(textArea);
+    }
+
+    function showNotification(message) {
+      const notification = document.getElementById('notification');
+      notification.textContent = message;
+      notification.style.opacity = '1';
+      setTimeout(() => {
+        notification.style.opacity = '0';
+      }, 2000);
+    }
+
+
+
+
+
+
+
+
+    function copyToClipboard2() {
+      const textToCopy = '@it_schedule_khai';
+
+      try {
+        // Сначала пытаемся использовать новый API (для современных браузеров)
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            showNotification('Вміст скопійовано');
+          })
+          .catch(() => {
+            // Если новый API не работает, пытаемся использовать старый способ
+            fallbackCopyToClipboard(textToCopy);
+          });
+      } catch (err) {
+        // Если новый API вообще не поддерживается, используем старый способ
+        fallbackCopyToClipboard(textToCopy);
+      }
+    }
+
+    function fallbackCopyToClipboard(text) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showNotification('Вміст скопійовано');
+        } else {
+          showNotification('Не вдалось скопійувати');
+        }
+      } catch (err) {
+        showNotification('Не вдалось скопійувати');
+      }
+
+      document.body.removeChild(textArea);
+    }
+
+    function showNotification(message) {
+      const notification = document.getElementById('notification');
+      notification.textContent = message;
+      notification.style.opacity = '1';
+      setTimeout(() => {
+        notification.style.opacity = '0';
+      }, 2000);
+    }
+
+
+
+
+    function copyToClipboard3() {
+      const textToCopy = 'it.schedule1@gmail.com';
+
+      try {
+        // Сначала пытаемся использовать новый API (для современных браузеров)
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            showNotification('Вміст скопійовано');
+          })
+          .catch(() => {
+            // Если новый API не работает, пытаемся использовать старый способ
+            fallbackCopyToClipboard(textToCopy);
+          });
+      } catch (err) {
+        // Если новый API вообще не поддерживается, используем старый способ
+        fallbackCopyToClipboard(textToCopy);
+      }
+    }
+
+    function fallbackCopyToClipboard(text) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showNotification('Вміст скопійовано');
+        } else {
+          showNotification('Не вдалось скопійувати');
+        }
+      } catch (err) {
+        showNotification('Не вдалось скопійувати');
+      }
+
+      document.body.removeChild(textArea);
+    }
+
+    function showNotification(message) {
+      const notification = document.getElementById('notification');
+      notification.textContent = message;
+      notification.style.opacity = '1';
+      setTimeout(() => {
+        notification.style.opacity = '0';
+      }, 2000);
+    }
+</script>
+
+
+</body>
+</html>
+

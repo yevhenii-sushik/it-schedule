@@ -1,0 +1,48 @@
+.chel {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+
+p {
+  font-family: "Mariupol_Regular", sans-serif;
+  font-size: 26px;
+  text-align: center;
+
+}
+
+.question-answer {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.question-input {
+  width: 480px;
+  height: 50px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 15px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #ecdf1d;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #d1c84b;
+}

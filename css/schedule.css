@@ -1,0 +1,87 @@
+body {
+    font-family: "Mariupol_Bold", sans-serif;
+    background-color: #ffe699;
+    transition: all 0.8s;
+}
+
+.function_button {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-button {
+    display: flex; /* Устанавливаем контейнер как flexbox */
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 70%;
+    height: 26%;
+    font-family: "Mariupol_Bold", sans-serif;
+    font-size: 30px;
+    padding: 1.4em 1.4em;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: #fff33b 6px 5px 0px 0px;
+    transition: all 0.4s;
+    border-bottom: 2px solid #fff33b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+  .my-button:hover {
+    background-color: rgba(252, 252, 252, 0.862);
+    width: 71%;
+    height: 31%;
+    font-family: "Mariupol_Bold", sans-serif;
+    font-size: 31px;
+    padding: 1.4em 1.4em;
+    box-shadow: #fff23bd3 6px 4px;
+  }
+  
+  .my-button:active {
+    background-color: #f0f0f0;
+    box-shadow: 4px 2px #fff33b;
+    transform: translateY(4px);
+  }
+
+.text {
+    width: 80%;
+    text-align: left;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+
+
+#banner {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  border-radius: 16px 0px 0px 16px;
+  background-color: white;
+  padding: 0px 10px 0px 5px;
+  text-align: left;
+}
+
+#closeButton {
+  margin-top: 5px;
+  background-color: #ffffff00;
+  width: 30px;
+  height: 30px;
+  border: none;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Mariupol_Medium';
+    src: local('Mariupol Medium'), local('Mariupol-Medium'),
+        url('Mariupol-Medium.woff2') format('woff2'),
+        url('Mariupol-Medium.woff') format('woff'),
+        url('Mariupol-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }

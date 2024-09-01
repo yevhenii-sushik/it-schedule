@@ -1,0 +1,278 @@
+.years {
+  width: 280px;
+  text-align: right;
+}
+
+.year {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hr-year {
+  width: 90%;
+  height: 3px;
+  border-radius: 40px; /* Радиус закругления трека */
+  border: 0px solid;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+.function_button {
+    margin-left: 50px;
+}
+
+.my-button {
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: #fff33b 3px 2px 0px 0px;
+    font-family: "Mariupol_Bold", sans-serif;
+    font-size: 20px;
+    border: 1px solid rgb(234, 234, 234);
+    transition: all 0.4s;
+}
+
+.my-button:hover {
+  background-color: rgba(251, 249, 249, 0.587);
+  border: 1px solid rgb(175, 175, 175);
+}
+
+.my-button:active {
+  background-color: #dcdada;
+  box-shadow: 3px 2px #fff33b;
+  transform: translateY(2px);
+}
+
+.my-button-sumer {
+  width: 150px;
+  margin-right: 10px;
+  border-radius: 16px;
+  background-color: rgb(238, 237, 237);
+  box-shadow: #fff23bd9 3px 2px 0px 0px;
+  font-family: "Mariupol_Bold", sans-serif;
+  font-size: 18px;
+  color: #585858;
+  border: 1px solid rgb(193, 193, 193);
+  transition: all 0.4s;
+}
+
+
+.text {
+    text-align: left;
+    margin-top: 6px;
+    margin-left: 4px;
+}
+
+.hr {
+    width: 130px;
+    border-radius: 40px; /* Радиус закругления трека */
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.514);
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.line-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.line-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+.line-sumer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.line-1-sumer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.line-2-sumer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.black-day {
+    width: 15px;
+    border-radius: 40px; /* Радиус закругления трека */
+    border: 2px solid;
+    border-color: black;
+}
+
+.orange-day {
+    width: 15px;
+    border-radius: 40px; /* Радиус закругления трека */
+    border: 2px solid;
+    border-color: orange;
+}
+
+.white-day {
+    width: 15px;
+    border-radius: 40px; /* Радиус закругления трека */
+    border: 2px solid;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.line-sumer > .black-day {
+  width: 15px;
+  border-radius: 40px; /* Радиус закругления трека */
+  border: 2px solid;
+  border-color: rgb(83, 83, 83);
+}
+
+.line-1-sumer > .black-day {
+  width: 15px;
+  border-radius: 40px; /* Радиус закругления трека */
+  border: 2px solid;
+  border-color: rgb(83, 83, 83);
+}
+
+.line-2-sumer > .black-day {
+  width: 15px;
+  border-radius: 40px; /* Радиус закругления трека */
+  border: 2px solid;
+  border-color: rgb(83, 83, 83);
+}
+
+.my-button-sumer > .orange-day {
+  width: 15px;
+  border-radius: 40px; /* Радиус закругления трека */
+  border: 2px solid;
+  border-color: orange;
+}
+
+
+td {
+    width: auto; /* Ширина контейнера */
+    height: auto; /* Высота контейнера */
+    overflow: auto; /* Автоматическая прокрутка при необходимости */  
+}
+
+th {
+    background-color: #adadad33;
+}
+
+table {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+p {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+
+.update {
+  margin-left: 70%;
+}
+
+a {
+  color: #a3990a;
+}
+
+.inner-bordered-table {
+    border-collapse: separate; /* Разделяем границы ячеек */
+    border-spacing: 0; /* Устанавливаем расстояние между границами в 0 */
+  }
+  
+  .inner-bordered-table th, .inner-bordered-table td {
+    border: 1px solid rgba(0, 0, 0, 0.329); /* Добавляем границу 1px черного цвета для ячеек таблицы */
+    padding: 2px; /* Добавляем отступ вокруг текста в ячейках */
+  }
+  
+  .inner-bordered-table th:first-child,
+  .inner-bordered-table td:first-child {
+    border-left: none; /* Убираем левую границу у первой ячейки в строке и заголовке */
+  }
+  
+  .inner-bordered-table th:last-child,
+  .inner-bordered-table td:last-child {
+    border-right: none; /* Убираем правую границу у последней ячейки в строке и заголовке */
+  }
+  
+  .inner-bordered-table tr:last-child th,
+  .inner-bordered-table tr:last-child td {
+    border-bottom: none; /* Убираем нижнюю границу у последней строки таблицы */
+  }
+  
+.baner {
+  position: fixed;
+  top: 600px;
+  left: 55px;
+  width: 80%;
+  box-shadow: #fff23bd9 3px 2px 0px 0px;
+
+}
+ 
+
+.baner > p {
+  line-height: 1.5;
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(246, 244, 244, 0.980);
+  border-radius: 20px; /* Радиус закругления трека */
+  /* border: 1px solid;
+  border-color: rgb(83, 83, 83); */
+  padding: 20px;
+  box-shadow: #66656539 0px 0px 9999999px 300px;
+  
+}
+
+/* Стилизация полосы прокрутки */
+::-webkit-scrollbar {
+    width: 8px; /* Ширина полосы */
+  }
+  
+  /* Стилизация трека полосы прокрутки */
+  ::-webkit-scrollbar-track {
+    background: #ffffff00; /* Цвет фона трека */
+    border-radius: 100%; /* Радиус закругления трека */
+  }
+  
+  /* Стилизация ползунка полосы прокрутки */
+  ::-webkit-scrollbar-thumb {
+    width: 10px; /* Ширина полосы */
+    background: #adadad; /* Цвет ползунка */
+    border-radius: 10px; /* Радиус закругления ползунка */
+
+  }
+  
+  /* При наведении курсора на ползунок */
+  ::-webkit-scrollbar-thumb:hover {
+    width: 10px; /* Ширина полосы */
+    background: #a0a0a0; /* Цвет ползунка при наведении */
+  }
+  

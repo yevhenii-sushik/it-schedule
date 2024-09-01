@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fonts\Mariupol-Bold\Mariupol_Bold.css">
+  <link rel="stylesheet" href="fonts\Mariupol-Regular\Mariupol_Regular.css">
+  <link rel="stylesheet" href="css\subject.css">
+  <script src="js\schedule.js"></script>
+  <script src="js\subject.js"></script>
+</head>
+
+<body>
+
+<div class="subject-card">
+    <div class="title">
+        <button class="back-button"  onclick="goBack()"><img src="img\back_circle.png" width="20" height="20" alt=""></button>
+        <h2>Фізична культура</h2>
+    </div>
+
+    <hr>
+
+    <div class="content">
+
+        <p>Ідентифікатор<br>
+        конференції: 508 940 7939   
+        <br>
+        <br>
+        Код доступа: 1964
+        <br>
+        <br>
+        Викладач:<br>
+        Коваленко Віра Михайлівна</p>
+
+        
+        <div class="buttons">
+            <button class="log-in" onclick="window.open('https://us02web.zoom.us/j/5089407939?pwd=QTlhZW83T2ZDSXdRU3UxRFlqZ2dsUT09', '_blank')">
+                <p class="log-in-text">Увійти</p>
+                <img src="img\button_pass.png" width="27" height="27" alt="">
+            </button>
+
+            <button class="copy-button"  onclick="copyToClipboard()">
+                <img width="30" height="30" src="img\button_copy.png" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div id="notification"></div>
+</div>
+
+
+
+<script>
+    function copyToClipboard() {
+      const textToCopy = 'https://us02web.zoom.us/j/5089407939?pwd=QTlhZW83T2ZDSXdRU3UxRFlqZ2dsUT09';
+
+      try {
+        // Сначала пытаемся использовать новый API (для современных браузеров)
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            showNotification('Вміст скопійовано');
+          })
+          .catch(() => {
+            // Если новый API не работает, пытаемся использовать старый способ
+            fallbackCopyToClipboard(textToCopy);
+          });
+      } catch (err) {
+        // Если новый API вообще не поддерживается, используем старый способ
+        fallbackCopyToClipboard(textToCopy);
+      }
+    }
+
+    function fallbackCopyToClipboard(text) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showNotification('Вміст скопійовано');
+        } else {
+          showNotification('Не вдалось скопійувати');
+        }
+      } catch (err) {
+        showNotification('Не вдалось скопійувати');
+      }
+
+      document.body.removeChild(textArea);
+    }
+
+    function showNotification(message) {
+      const notification = document.getElementById('notification');
+      notification.textContent = message;
+      notification.style.opacity = '1';
+      setTimeout(() => {
+        notification.style.opacity = '0';
+      }, 2000);
+    }
+</script>
+
+</body>
+</html>
+

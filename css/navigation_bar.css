@@ -1,0 +1,84 @@
+header {
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+.header { 
+  background-color: rgba(255, 255, 255, 0);
+  width: 308px;
+  height: 52px;
+  border: none;
+}
+
+h1 {
+  margin-left: 6px;
+}
+
+.icon_navigation {
+    padding-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 90px; 
+}
+
+.navigation {
+    font-family: "Mariupol_Bold", sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: #ffffff00;;
+    width: 80px;
+    height: 85px;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .navigation:hover {
+    background-color: rgba(139, 131, 19, 0.075);
+  }
+  
+  .navigation:active {
+    background-color: rgba(0, 0, 0, 0.110);
+    transform: translateY(2px);
+  }
+
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0px; 
+    bottom: 5px;
+    padding: 10px 0px;
+}
+
+hr {
+    height: 3px; /* Толщина разделителя */
+    width: 100%;
+    background-color: rgb(255, 231, 11); /* Цвет разделителя */
+    border: none; /* Убираем стандартную границу */
+}
+
+
+
+/* Запрещаем выделение текста */
+body {
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  user-select: none; /* Запретить выделение текста */
+  -webkit-user-drag: none; /* Запретить перетаскивание в Chrome, Safari, Opera */
+  -moz-user-drag: none; /* Запретить перетаскивание в Firefox */
+  -ms-user-drag: none; /* Запретить перетаскивание в IE/Edge */
+  -webkit-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Chrome, Safari, Opera */
+  -moz-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Firefox */
+  -ms-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в IE/Edge */
+}

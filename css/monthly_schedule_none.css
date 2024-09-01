@@ -1,0 +1,49 @@
+body {
+    background-color: #f6f5f1;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-weight: lighter;
+    font-size: 140px;
+    line-height: 0px;
+    margin-top: 160px;
+}
+
+p {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+a {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 30px;
+    line-height: 0px;
+    color: rgb(183, 158, 16);
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Запрещаем выделение текста */
+body {
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    user-select: none; /* Запретить выделение текста */
+    -webkit-user-drag: none; /* Запретить перетаскивание в Chrome, Safari, Opera */
+    -moz-user-drag: none; /* Запретить перетаскивание в Firefox */
+    -ms-user-drag: none; /* Запретить перетаскивание в IE/Edge */
+    -webkit-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Chrome, Safari, Opera */
+    -moz-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Firefox */
+    -ms-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в IE/Edge */
+  }

@@ -1,0 +1,65 @@
+body {
+    font-family: "Mariupol_Bold", sans-serif;
+    background-color: #f6f5f1;
+    transition: all 0.8s;
+}
+
+/* Запрещаем выделение текста */
+body {
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.function_button {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-button {
+  display: flex; /* Устанавливаем контейнер как flexbox */
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 70%;
+  height: 30%;
+  font-family: "Mariupol_Bold", sans-serif;
+  font-size: 30px;
+  padding: 1.4em 1.4em;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: #fff33b 6px 5px 0px 0px;
+  transition: all 0.4s;
+  border-bottom: 2px solid #fff33b;
+}
+
+.my-button:hover {
+  background-color: rgba(252, 252, 252, 0.862);
+  width: 71%;
+  height: 31%;
+  font-family: "Mariupol_Bold", sans-serif;
+  font-size: 31px;
+  padding: 1.4em 1.4em;
+  box-shadow: #fff23bd3 6px 4px;
+}
+
+.my-button:active {
+  background-color: #f0f0f0;
+  box-shadow: 4px 2px #fff33b;
+  transform: translateY(4px);
+}
+
+.text {
+    width: 60%;
+    text-align: left;
+}
+
+footer {
+    background-color: white;
+}
+

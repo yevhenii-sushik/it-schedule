@@ -1,0 +1,181 @@
+body {
+    background-color: #f6f5f1;
+    display: flex;
+    justify-content: center;
+}
+
+.subject-card {
+    margin-top: 100px;
+    background-color: white;
+    width: 450px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: #fff33b 6px 5px 0px 0px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.back-button {
+    margin-top: 5px;
+    margin-left: 18px;
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+
+.back-button > :hover {
+    transition: all 0.2s;
+    height: 23px;
+    width: 23px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: -2px;
+}
+
+.back-button > :active {
+    transition: all 0.2s;
+    height: 18px;
+    width: 18px;
+
+    margin-left: 3px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+
+
+
+h2 {
+    margin-left: 8px;
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 30px;
+    padding: 0;
+    line-height: 0;
+}
+
+hr {
+    height: 2px; /* Толщина разделителя */
+    width: 420px;
+    padding: 0;
+    background-color: rgb(255, 231, 11); /* Цвет разделителя */
+    border: none; /* Убираем стандартную границу */
+}
+
+.content {
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+p {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+br {
+    background-color: black;
+    
+}
+
+.buttons {
+    /* position: absolute;
+    bottom: 190px; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: space;
+}
+
+.log-in {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 25px;
+    background-color: #fff33b;
+    width: 300px;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    transition: all 0.6s;
+}
+
+.log-in:hover {
+    background-color: #f5e942;
+    border-radius: 10px;
+  }
+
+.log-in:active {
+    background-color: rgb(235, 235, 235);
+    transition: all 0.2s;
+    transform: translateY(1px);
+}
+
+.log-in-text {
+    margin-left: 70px;
+}
+
+.copy-button {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(228, 228, 228, 0);
+    width: 42px;
+    height: 48px;
+    margin-left: 8px;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.6s;
+}
+
+.copy-button:hover {
+    background-color: rgba(197, 197, 197, 0.377);
+    border-radius: 10px;
+  }
+
+.copy-button:active {
+    background-color: rgb(235, 235, 235);
+    transition: all 0.2s;
+    transform: translateY(1px);
+}
+
+#notification {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 20px;
+    transform: translateX(-50%);
+    background-color: #333333d2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 16px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 999;
+  }
+
+
+  /* Запрещаем выделение текста */
+body {
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    user-select: none; /* Запретить выделение текста */
+    -webkit-user-drag: none; /* Запретить перетаскивание в Chrome, Safari, Opera */
+    -moz-user-drag: none; /* Запретить перетаскивание в Firefox */
+    -ms-user-drag: none; /* Запретить перетаскивание в IE/Edge */
+    -webkit-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Chrome, Safari, Opera */
+    -moz-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Firefox */
+    -ms-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в IE/Edge */
+  }

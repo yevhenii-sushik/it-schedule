@@ -1,0 +1,70 @@
+body {
+    font-family: 'Mariuol_Bold', sans-serif;
+    background-color: #f6f5f1;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.back_button {
+    border: none;
+    width: 20px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.back_button:active {
+    transform: translateY(1px);
+}
+
+p {
+    font-family: 'Mariuol_Bold', sans-serif;
+}
+
+ul {
+    font-family: "Mariupol_Regular", sans-serif;
+}
+
+li {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.icon_back {
+    width: 20px;
+    height: 30px;
+}
+
+.hr_header {
+    width: 90%;
+    height: 2px; 
+    float: left;
+    border: none;
+    margin-left: 10px;
+    background-color: rgb(255, 231, 11);
+}
+
+
+/* Запрещаем выделение текста */
+body {
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    user-select: none; /* Запретить выделение текста */
+    -webkit-user-drag: none; /* Запретить перетаскивание в Chrome, Safari, Opera */
+    -moz-user-drag: none; /* Запретить перетаскивание в Firefox */
+    -ms-user-drag: none; /* Запретить перетаскивание в IE/Edge */
+    -webkit-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Chrome, Safari, Opera */
+    -moz-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Firefox */
+    -ms-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в IE/Edge */
+  }

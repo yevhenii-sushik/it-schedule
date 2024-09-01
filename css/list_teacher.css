@@ -1,0 +1,47 @@
+body {
+    font-family: "Mariupol_Bold", sans-serif;
+    background-color: #f6f5f1;
+}
+
+tr {
+    border-bottom: 1px solid #fff33b; /* Устанавливаем желтую горизонтальную границу для строк */
+}
+
+::selection {
+    background-color: rgba(255, 255, 0, 0.5); /* желтый цвет с прозрачностью */
+}
+
+
+.no_table {
+    background-color: #f6f5f1; /* Белый фон таблицы */
+    border-radius: 0px; /* Закругление углов */
+    padding: 0px;
+    border-bottom: 10px solid #f6f5f1;
+    margin-left: 22px;
+}
+
+table {
+    font-family: "Mariupol_Regular", sans-serif;
+    border-collapse: collapse;
+    background-color: white; /* Белый фон таблицы */
+    width: 500px;
+}
+
+.table-container {
+    font-size: 18px;
+    width: 520px; /* Чтобы контейнер подстраивался под содержимое таблицы */
+    margin: 0px auto; /* Центрируем контейнер по горизонтали */
+    padding: 10px; /* Добавляем отступ внутри контейнера */
+    border-radius: 16px; /* Закругление углов */
+    background-color: white; /* Белый фон контейнера */
+    box-shadow: 4px 4px 0px #fff33b; /* Желтая тень, смещение по горизонтали и вертикали на 2px, размытие на 2px */
+}
+/* Пример стилей для таблицы */
+.table-container table {
+    width: 100%; /* Чтобы таблица занимала всю ширину контейнера */
+    border-collapse: collapse; /* Объединяем границы ячеек таблицы */
+}
+
+.table-container th, .table-container td {
+    padding: 8px; /* Отступ внутри ячеек */
+}

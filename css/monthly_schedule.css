@@ -1,0 +1,160 @@
+header {
+    position: fixed;
+    top: 23px;
+    left: 1 ;
+    background-color: #f6f5f1;
+    height: 50px;
+    width: 100%;
+    box-shadow: #f6f5f1 0px -30px 0px 30px;
+  }
+
+.contant {
+    margin-left: 30px;
+}
+
+.week {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+} 
+
+.month {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+.title-date {
+    background-color: #adadad33;
+    width: 250px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.title-number {
+    background-color: #adadad33;
+    width: 30px;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-radius: 10px 0px 0px 0px;
+}
+
+.number {
+    text-align: center;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.date {
+    border-top: 1px solid black;
+}
+
+
+.title-date-none {
+    background-color: #eca34e;
+    width: 250px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.title-number-none {
+    background-color: #eca24e;
+    width: 30px;
+    border-right: 1px solid rgba(37, 37, 37, 0.5);
+    border-radius: 10px 0px 0px 0px;
+}
+
+.number-none {
+    background-color: #eca24e81;
+    text-align: center;
+    border-right: 1px solid rgba(37, 37, 37, 0.5);
+    border-top: 1px solid rgba(37, 37, 37, 0.5);
+}
+
+.date-none {
+    background-color: #eca24e81;
+    border-top: 1px solid rgba(37, 37, 37, 0.5);
+}
+
+.number-none1 {
+    background-color: #eca24e81;
+    text-align: center;
+    border-right: 1px solid rgba(37, 37, 37, 0.5);
+    border-top: 1px solid rgba(37, 37, 37, 0.5);
+    border-radius: 0px 0px 0px 10px;
+}
+
+.date-none1 {
+    background-color: #eca24e81;
+    border-top: 1px solid rgba(37, 37, 37, 0.5);
+    border-radius: 0px 0px 10px 0px;
+}
+
+
+.hr-month {
+    width: 72%;
+    height: 3px;
+    border-radius: 40px; /* Радиус закругления трека */
+    border: 0px solid;
+    background-color: rgba(0, 0, 0, 0.514);
+  }
+ 
+
+  
+table {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+  
+
+p {
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+    background-color: #f6f5f1;
+    height: 18px;
+    width: 100%;
+    padding-top: 10px;
+    box-shadow: #f6f5f1 0px 30px 0px 30px;
+}
+  
+a {
+    color: #a3990a;
+}
+  
+h1 {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 40px;
+}
+
+.plug {
+    width: 75%;
+    height: 80px;
+}
+
+
+  /* Стилизация полосы прокрутки */
+  ::-webkit-scrollbar {
+      width: 8px; /* Ширина полосы */
+    }
+    
+    /* Стилизация трека полосы прокрутки */
+    ::-webkit-scrollbar-track {
+      background: #ffffff00; /* Цвет фона трека */
+      border-radius: 100%; /* Радиус закругления трека */
+    }
+    
+    /* Стилизация ползунка полосы прокрутки */
+    ::-webkit-scrollbar-thumb {
+      width: 10px; /* Ширина полосы */
+      background: #adadad; /* Цвет ползунка */
+      border-radius: 10px; /* Радиус закругления ползунка */
+  
+    }
+    
+    /* При наведении курсора на ползунок */
+    ::-webkit-scrollbar-thumb:hover {
+      width: 10px; /* Ширина полосы */
+      background: #a0a0a0; /* Цвет ползунка при наведении */
+    }
+    

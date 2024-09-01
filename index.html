@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fonts\Mariupol-Bold\Mariupol_Bold.css">
+  <link rel="stylesheet" href="fonts\Mariupol-Medium\Mariupol_Medium.css">
+  <link rel="stylesheet" href="css\navigation_bar.css">
+  <link rel="stylesheet" href="css\schedule.css">
+  <link rel="stylesheet" href="css\eror.css">
+  <script src="js\schedul.js"></script>
+</head>
+
+<body>
+
+
+
+
+<header>
+  <button class="header" onclick="window.location.href = 'index.html'"><img src="img\logo_schedule.png" alt="#IT chedule" width="300" height="50"></button>
+  <h1>Розклад</h1>
+  
+  <!-- <div id="banner">
+  <button id="closeButton">✕</button>
+  <p>Додаток було оновлен<br>до версії V. 0.5.1</p> -->
+</div>
+
+</header>
+
+<div class="function_button">
+  <button class="my-button" onclick="window.location.href = 'week_schedule.html'">
+    <div class="text">Розклад по<br>дням тижня</div>
+    <div><img width="40" height="40" src="img\icon_next.png" alt=""></div>
+  </button>
+  <button class="my-button" onclick="window.location.href = 'all_schedule.html'">
+    <div>Весь розклад</div>
+    <div><img width="40" height="40" src="img\icon_next.png" alt=""></div>
+  </button>
+  <button class="my-button" onclick="window.location.href = ''">
+    <div>Розклад дзвінків</div>
+    <div><img width="40" height="40" src="img\icon_next.png" alt=""></div>
+  </button> 
+
+</div>
+
+<footer>
+  <nav>
+    <button class="navigation" onclick="window.location.href = 'index.html'">
+      <div class="icon_navigation"><img src="img\schedule_tab.png" alt="" width="45" height="45"></div>
+      <div>Розклад</div>
+    </button>
+
+    <button class="navigation" onclick="window.location.href = 'other.html'">
+      <div class="icon_navigation"><img src="img\other_tab.png" alt="" width="40" height="40"></div>
+      <div>ТулсИ</div>
+    </button>
+
+    <button class="navigation" onclick="window.location.href = 'menu.html'">
+      <div class="icon_navigation"><img src="img\menu_tab.png" alt="" width="45" height="45"></div>
+      <div>Меню</div>
+    </button>
+  </nav>
+</footer>
+
+
+
+
+<div class="scrin">
+</div>
+
+<div class="masage-text">
+  <h2>Шановний користувач!</h2>
+  <h3>Роботу додатку призупинено на невизначений 
+    термін у зв'язку з технічними роботами на 
+    сервері, а також через низьку активність 
+    користувачів.</h3>
+    <!-- <p class="ys-team">(YSplash DS)</p> -->
+</div>
+
+<p class="project-by">Project by:</p>
+<img class="ysplash" src="img\logo_title.png" alt="" width="140">
+
+<script>
+// Функция для скрытия баннера и установки cookie
+function hideBanner() {
+  const banner = document.getElementById('banner');
+  banner.parentNode.removeChild(banner);
+  const d = new Date();
+  d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000)); // Устанавливаем срок действия cookie на 1 год
+  const expires = "expires=" + d.toUTCString();
+  document.cookie = "bannerShown=true;" + expires + ";path=/";
+  console.log('Cookie set:', document.cookie); // Для отладки
+}
+
+// Получаем кнопку для закрытия баннера
+const closeButton = document.getElementById('closeButton');
+closeButton.addEventListener('click', hideBanner);
+
+// Функция для получения значения cookie
+function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+// Проверяем, был ли баннер уже показан
+const bannerShown = getCookie('bannerShown');
+console.log('Cookie value:', bannerShown); // Для отладки
+
+// Если баннер не был показан, отображаем его
+if (!bannerShown) {
+  const banner = document.getElementById('banner');
+  banner.style.display = 'block';
+}
+</script>
+
+
+<link src="js\schedul.js">
+
+</body>
+</html>

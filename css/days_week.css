@@ -1,0 +1,232 @@
+.function_button {
+    margin-top: 30px;
+    height: 73vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-button {
+    background-color: white;
+    width: 75%;
+    height: 120px;
+    font-family: "Mariupol_Bold", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: #fff33b 3px 2px;
+    transition: all 0.4s;
+    border-bottom: 2px solid #fff33b;
+}
+
+  .my-button:hover {
+    background-color: rgb(252, 252, 252);
+    width: 76%;
+    height: 124px;
+    font-family: "Mariupol_Bold", sans-serif;
+    box-shadow: #fff23bd3 3px 2px;
+  }
+  
+  .my-button:active {
+    background-color: #f0f0f0;
+    box-shadow: 3px 2px #fff33b;
+    transform: translateY(2px);
+  }
+
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.title-text {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 26px;
+    padding: 0;
+    line-height: 0;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    height: 2px;
+    width: 92%;
+    margin-left: 15px;
+    background-color: #fff33b;
+}
+
+.circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 100px;
+    background-color: #fff33b;
+}
+
+.teacher-name {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 25px;
+    padding: 0;
+    margin-left: 25px;
+    line-height: 0;
+    text-align: left;
+}
+
+
+
+/* Two groups */
+
+
+.two-groups {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+
+
+.two-groups-button {
+    background-color: white;
+    width: 205px;
+    height: 120px;
+    font-family: "Mariupol_Bold", sans-serif;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: #fff33b 3px 2px;
+    transition: all 0.4s;
+    border-bottom: 2px solid #fff33b;
+    text-align: left;
+}
+
+  .two-groups-button:hover {
+    background-color: rgb(252, 252, 252);
+    width: 208px;
+    height: 124px;
+    font-family: "Mariupol_Bold", sans-serif;
+    box-shadow: #fff23bd3 3px 2px;
+  }
+  
+  .two-groups-button:active {
+    background-color: #f0f0f0;
+    box-shadow: 3px 2px #fff33b;
+    transform: translateY(2px);
+  }
+
+
+  .two-groups-title-text {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 26px;
+    padding: 0;
+    line-height: 0;
+}
+
+
+.two-groups-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 12px;
+}
+
+.two-groups-title-text {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0;
+    line-height: 0;
+}
+
+
+.two-groups-separator {
+    display: flex;
+    align-items: center;
+}
+
+.two-groups-line {
+    height: 2px;
+    width: 90%;
+    margin-left: 7px;
+    background-color: #fff33b;
+}
+
+.two-groups-circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 100px;
+    background-color: #fff33b;
+}
+
+.two-groups-teacher-name {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin-left: 15px;
+    line-height: 0;
+    text-align: left;
+}
+
+
+
+
+
+
+
+.plug {
+    width: 75%;
+    height: 120px;
+}
+
+.plug-mini {
+    width: 205px;
+    height: 120px;
+}
+
+.links {
+    position: absolute; /* Перевести псевдоэлемент в абсолютное позиционирование */
+    left: 15px;
+    bottom: 0;
+}
+
+a {
+    color: #a3990a;
+}
+
+
+.my-button-none {
+    background-color: rgb(172, 240, 166);
+    width: 75%;
+    height: 120px;
+    font-family: "Mariupol_Bold", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: rgb(96, 184, 88) 3px 2px;
+    transition: all 0.4s;
+    border-bottom: 2px solid rgb(96, 184, 88);
+}
+
+
+.line-none  {
+    height: 2px;
+    width: 92%;
+    margin-left: 15px;
+    background-color: rgb(96, 184, 88);
+}
+
+.circle-none {
+    height: 12px;
+    width: 12px;
+    border-radius: 100px;
+    background-color: rgb(96, 184, 88);
+}

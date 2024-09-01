@@ -1,0 +1,57 @@
+.function_button {
+    margin-top: 40px;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-button {
+    display: flex; /* Устанавливаем контейнер как flexbox */
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 75%;
+    height: 20px;
+    font-family: "Mariupol_Bold", sans-serif;
+    font-size: 30px;
+    padding: 1.4em 1.4em;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: #fff33b 3px 2px;
+    transition: all 0.4s;
+    border-bottom: 2px solid #fff33b;
+}
+
+.my-button:hover {
+    background-color: rgb(252, 252, 252);
+    width: 76%;
+    height: 20px;
+    font-family: "Mariupol_Bold", sans-serif;
+    font-size: 31px;
+    padding: 1.4em 1.4em;
+    box-shadow: #fff23bd3 3px 2px;
+  }
+  
+  .my-button:active {
+    background-color: #f0f0f0;
+    box-shadow: 3px 2px #fff33b;
+    transform: translateY(2px);
+  }
+
+p {
+  position: absolute; /* Перевести псевдоэлемент в абсолютное позиционирование */
+  left: 15px;
+  bottom: 0;
+}
+
+.update {
+  margin-left: 70%;
+}
+
+a {
+  color: #a3990a;
+}

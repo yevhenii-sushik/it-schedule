@@ -1,0 +1,91 @@
+body {
+    background-color: #ffe699;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: start;
+    left: -1px;
+    width: 100%;
+    height: 90px;
+    background-color: #ffe699;
+}
+
+.logo {
+    margin-top: 31px;
+    margin-left: 27px;
+}
+
+.back {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 26px;
+    margin-left: 20px;
+    margin-top: 50px;
+    color: #a3990a;
+}
+
+.content {
+    margin-left: 20px;
+    width: 94%;
+}
+
+h1 {
+    margin-top: 120px;
+}
+
+h2 {
+    font-family: "Mariupol_Bold", sans-serif;
+}
+
+p {
+    font-family: "Mariupol_Regular", sans-serif;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+
+/* Стилизация полосы прокрутки */
+::-webkit-scrollbar {
+    width: 8px; /* Ширина полосы */
+  }
+  
+  /* Стилизация трека полосы прокрутки */
+  ::-webkit-scrollbar-track {
+    background: #ffffff00; /* Цвет фона трека */
+    border-radius: 100%; /* Радиус закругления трека */
+  }
+  
+  /* Стилизация ползунка полосы прокрутки */
+  ::-webkit-scrollbar-thumb {
+    width: 10px; /* Ширина полосы */
+    background: #adadad; /* Цвет ползунка */
+    border-radius: 10px; /* Радиус закругления ползунка */
+
+  }
+  
+  /* При наведении курсора на ползунок */
+  ::-webkit-scrollbar-thumb:hover {
+    width: 10px; /* Ширина полосы */
+    background: #a0a0a0; /* Цвет ползунка при наведении */
+  }
+  
+
+    /* Запрещаем выделение текста */
+body {
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    user-select: none; /* Запретить выделение текста */
+    -webkit-user-drag: none; /* Запретить перетаскивание в Chrome, Safari, Opera */
+    -moz-user-drag: none; /* Запретить перетаскивание в Firefox */
+    -ms-user-drag: none; /* Запретить перетаскивание в IE/Edge */
+    -webkit-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Chrome, Safari, Opera */
+    -moz-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в Firefox */
+    -ms-touch-callout: none; /* Запретить всплытие контекстного меню при нажатии на изображение в IE/Edge */
+  }
